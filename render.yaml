@@ -6,6 +6,13 @@ services:
     scaling:
       minInstances: 1
       maxInstances: 2
+      targetMemoryPercent: 60
     startCommand: npm start
     envVars:
       - key: NEW_RELIC_LICENSE_KEY
+
+envVarGroups:
+  - name: user-settings
+    envVars:
+      - key: NEW_RELIC_LICENSE_KEY
+        sync: false
