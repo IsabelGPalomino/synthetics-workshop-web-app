@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: express
+    env: node
+    repo: https://github.com/bencgreenberg/synthetics-workshop-web-app.git
+    scaling:
+      minInstances: 1
+      maxInstances: 2
+    startCommand: npm start
+    envVars:
+      - key: NEW_RELIC_LICENSE_KEY
