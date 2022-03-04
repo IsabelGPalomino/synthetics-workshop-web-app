@@ -1,0 +1,19 @@
+{
+  "name": "synthetics-workshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tailwind:css": "postcss public/styles/tailwind.css -o public/styles/style.css",
+    "start": "npm run tailwind:css && node server",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@mdi/font": "^6.5.95",
+    "express": "^4.17.3",
+    "tailwindcss": "^3.0.23"
+  }
+}
