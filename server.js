@@ -1,3 +1,5 @@
+require('dotenv').config();
+require('newrelic');
 const express = require('express');
 
 const port = 8000;
