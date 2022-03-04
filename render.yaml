@@ -7,6 +7,7 @@ services:
       minInstances: 1
       maxInstances: 2
       targetMemoryPercent: 60
+    buildCommand: npm install
     startCommand: npm start
 
 envVarGroups:
