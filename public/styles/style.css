@@ -479,6 +479,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mb-8 {
   margin-bottom: 2rem;
 }
+.mr-0 {
+  margin-right: 0px;
+}
 .mb-6 {
   margin-bottom: 1.5rem;
 }
@@ -545,8 +548,36 @@ Ensure the default browser behavior of the `hidden` attribute.
 .rounded-2xl {
   border-radius: 1rem;
 }
+.rounded-l-lg {
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+.rounded-r-lg {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
 .border {
   border-width: 1px;
+}
+.border-t {
+  border-top-width: 1px;
+}
+.border-b {
+  border-bottom-width: 1px;
+}
+.border-l {
+  border-left-width: 1px;
+}
+.border-r {
+  border-right-width: 1px;
+}
+.border-gray-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
+}
+.border-yellow-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(234 179 8 / var(--tw-border-opacity));
 }
 .bg-gray-200 {
   --tw-bg-opacity: 1;
@@ -559,6 +590,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-gray-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+}
+.bg-yellow-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 204 21 / var(--tw-bg-opacity));
 }
 .p-2 {
   padding: 0.5rem;
@@ -581,6 +616,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 .px-6 {
   padding-left: 1.5rem;
@@ -613,6 +652,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .font-light {
   font-weight: 300;
+}
+.uppercase {
+  text-transform: uppercase;
 }
 .text-gray-800 {
   --tw-text-opacity: 1;
