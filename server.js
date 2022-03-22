@@ -24,4 +24,8 @@ app.get('/stuart', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'public/stuart.html'));
 });
 
+app.post('/subscribe', (req, res) => {
+  res.sendFile(path.resolve(__dirname, 'public/success.html'));
+})
+
 app.listen(port, console.log(`Server started on ${port}`));
