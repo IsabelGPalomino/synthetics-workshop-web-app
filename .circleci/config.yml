@@ -24,3 +24,15 @@ workflows:
   say-hello-workflow:
     jobs:
       - say-hello
+      jobs:
+  build-and-test:
+    docker:
+      - image: cimg/node:16.14.0
+    steps:
+      - checkout
+      - run:
+          name: Install deps
+          command: npm install
+      - run:
+          name: Run tests
+          command: npm run test-ci
