@@ -23,8 +23,7 @@ jobs:
 workflows:
   say-hello-workflow:
     jobs:
-      - say-hello
-      jobs:
+      
   build-and-test:
     docker:
       - image: cimg/node:16.14.0
@@ -36,3 +35,7 @@ workflows:
       - run:
           name: Run tests
           command: npm run test-ci
+          workflows:
+  run-tests:
+    jobs:
+      - build-and-test
